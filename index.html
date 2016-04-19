@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/library.js"></script>
+    <style>
+        body{
+            color:darkgray;
+        }
+        span{
+            background-color:lightgray;
+            color:darkgray;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Hi there, i'm 
+        <span class="ChangeText">
+            a UX-Designer, a Web-Designer, a Web-Developer, Jonathan
+        </span>
+        <span class="Cursor"> |, </span>
+    </p>
+    <p>
+        And i like 
+        <span class="ChangeText">
+           to shoot video's, to editing video's, drawing, photography
+        </span>
+        <span class="Cursor"> |, </span>
+    </p>
+    <span class="Loader"> ,.,..,...</span>
+</body>
+</html>
+<script>
+
+    //Define all the elements that the library has to use
+    var ElementA = document.getElementsByClassName('ChangeText')[0];    
+    var ElementB = document.getElementsByClassName('ChangeText')[1]; 
+    var CursorA = document.getElementsByClassName('Cursor')[0];  
+    var CursorB = document.getElementsByClassName('Cursor')[1];  
+    var Loader =  document.getElementsByClassName('Loader')[0];  
+    
+    //Call the library and assign an element and the changespeed
+    library.init(ElementA, 1000);
+    library.init(ElementB, 3000);
+    library.init(CursorA,500);
+    library.init(CursorB,500);
+    library.init(Loader,200);
+    
+</script>
